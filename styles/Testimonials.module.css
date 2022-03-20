@@ -1,0 +1,70 @@
+.container{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+.title{
+    text-align: center;
+    margin: 0;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.card{
+    width: 30%;
+}
+.comment{
+    font-size: 20px;
+    font-weight: 300;
+}
+.person{
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    border-radius: 50%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin: 1.25rem;
+}
+.username{
+    font-weight: bold;
+    color:#555;
+}
+.jobtitle{
+    font-style: 14px;
+}
+
+@media screen and (max-width:480px){
+    .container{
+        padding: 1.25rem;
+    }
+    .title{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .card{
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+        text-align: center;
+        background-color: rgba(92, 85, 85, 0.507);
+    }
+}

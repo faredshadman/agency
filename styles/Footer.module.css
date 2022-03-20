@@ -1,0 +1,50 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.849);
+    color: #fff;
+    min-height: 250px;
+    border-top: 3px solid black;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    padding: 3rem;
+    justify-content: space-around;
+}
+.title{
+    font-weight: 400;
+    color: white;
+    background: rgba(0, 128, 0, 0.568);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: max-content;
+}
+.linkTitle{
+    text-decoration: underline;
+}
+.link{
+    display: flex;
+    align-items: center;
+}
+.linkText{
+    margin-right: 20px;
+}
+.cardL{
+    flex: 2;
+}
+.cardS{
+    flex: 1;
+}
+.cardItem{
+    margin-bottom: 20px;
+}
+@media screen and (max-width:480px) {
+    .container{
+        flex-direction: column;
+    }
+    .title,.linkTitle{
+        font-size: 30px;
+    }
+    .cardItem{
+        text-align: center;
+        font-size: 18px;
+    }
+}
